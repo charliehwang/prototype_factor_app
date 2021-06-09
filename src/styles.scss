@@ -100,7 +100,27 @@ h1.container-title {
 
 }
 
-
 @media (max-width: 992px) { 
+	.charts {
+		display: flex;
+		flex-direction: column;
 
+		.chart-container {
+			margin: 0.25rem;
+			width: 70%;
+		}
+	}
+}
+
+
+@media (max-width: 576px) { 
+	.charts {
+		display: flex;
+		flex-direction: column;
+
+		.chart-container {
+			margin: 0.25rem;
+			width: 100%;
+		}
+	}
 }
