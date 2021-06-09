@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+	box-sizing: border-box;
+}
+
+html, body  {
+	margin: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+// *
+// 	border: 1px solid gray
+
+:root  {
+	--text-primary: #FFF;
+	--primary-dark: #5d727e;
+	--primary-orange: #E8872D;
+
+	--secondary-dark: #648191;
+}
+
+.light-theme {
+	--text-primary: var(--secondary-dark);
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	// border: 3px solid pink;
+	// overflow: hidden;
+	text-align: center;
+}
+
+#container img.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(70%);
+	z-index: -2;
+}
+
+h1.container-title {
+	font-size: 350%;
+	color: var(--text-primary);
+	padding-top: 2rem;
+	padding-left: 2rem;
+	margin: 0;
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.charts {
+	display: flex;
+	flex-direction: row;
+
+	.chart-container {
+		margin: 1rem;
+		width: 30%;
+	}
+
+	app-timeline {}
+
+	app-chart {
+		padding: 1rem;
+	}
+
+
+	.chart-title {
+		font-weight: bold;
+		font-family: Montserrat;
+		text-transform: uppercase;
+		color: black;
+	}
+
+}
+

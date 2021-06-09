@@ -1,0 +1,97 @@
+#login-page {
+	height: 100%;
+	background: linear-gradient(var(--primary-dark), rgb(0 0 0 / 65%)), url(/assets/images/building1.jpeg) no-repeat;
+	background-size: 100%;
+	background-position: 50% 70%;
+
+	display: flex;
+	justify-content: center;
+}
+
+#login-container {
+	position: relative;
+	top: 20%;
+	height: 24rem;
+	width: 35rem;
+	padding: 2rem 4rem;
+	z-index: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.logo { 
+		height: 6rem;
+		margin-bottom: 1rem;
+		// border: 1px solid red;
+	}
+
+	& .background {
+		position: absolute;
+		top: 0; 
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: white;
+		opacity: 30%;
+		border-radius: 0.25rem;
+		box-shadow: 0rem 0rem 1rem 0.25px rgb(0 0 0);
+		z-index: -1;
+	}
+
+	form {
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+	}
+
+	input {
+		width: 100%;
+		border-radius: 0.25rem;
+		font-size: 120%;
+		padding: 0.55rem;
+		margin-bottom: 0.75rem;
+
+		border: 0.25rem solid white; 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    background: rgba(255,255,255,0.5);
+	}
+
+	input.password {
+		font-size: 18px;
+		&::-webkit-input-placeholder {
+			transform: scale(0.77);
+			transform-origin: 0 50%;
+		}
+		&::-moz-placeholder {
+			font-size: 14px;
+			opacity: 1;
+		}
+		&:-ms-input-placeholder {
+			font-size: 14px;
+		}
+	}
+
+
+	button {
+		margin-left: auto;
+		margin-right: 0;
+		width: 7rem;
+		border-radius: 0.25rem;
+		margin-top: 1rem;
+		padding: 1rem;
+		background: var(--primary-orange);
+		font-family: Montserrat;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 110%;
+		color: var(--text-primary);
+		letter-spacing: 0.05rem;
+		text-shadow: -0.05rem -0.05rem rgba(0,0,0,0.4);
+
+		border: 0.20rem solid white; 
+
+	}
+}

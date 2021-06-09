@@ -1,0 +1,6 @@
+<main>
+	<app-sidebar id="sidebar"></app-sidebar>
+	<div [@routeAnimations]="prepareRoute(outlet)" id="content">
+		<router-outlet #outlet="outlet"></router-outlet>
+	</div>
+</main>

@@ -1,0 +1,24 @@
+<div id="container">
+	<h1 class="container-title light-theme">Dashboard</h1>
+
+	<div class="charts">
+		<div class="chart-container">
+			<div class="chart-title">Cash Reserves</div>
+			<app-timeline [data]="cashBalanceData" [xAccessor]="dateAccessor" [yAccessor]="cashBalanceAccessor"
+				label="Total Amount"> </app-timeline>
+		</div>
+
+		<div class="chart-container">
+			<div class="chart-title">Account Receivables</div>
+			<app-timeline [data]="accountReceivablesData" [xAccessor]="dateAccessor" [yAccessor]="accountReceivablesAccessor"
+				label="Total Amount"> </app-timeline>
+		</div>
+
+		<div class="chart-container">
+			<div class="chart-title">Escrow Reserves</div>
+			<app-timeline [data]="escrowReservesData" [xAccessor]="dateAccessor" [yAccessor]="escrowReservesAccessor"
+				label="Total Amount"> </app-timeline>
+		</div>
+	</div> <!-- .charts -->
+
+</div>
