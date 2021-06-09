@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
-    setInterval(() => this.getData(), 5000);
+    setInterval(() => this.getData(), 3500);
   }
 
   getData(): void {
