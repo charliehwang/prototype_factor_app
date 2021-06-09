@@ -69,3 +69,42 @@ nav {
 		}
 	}
 }
+
+@media (max-width: 992px) { 
+	.logo {
+		padding-top: 1rem;
+
+	}
+
+	nav ul {
+		display: flex;
+		flex-flow: row;
+		font-size: 90%;
+		width: 100%;
+		margin-right: 1rem;
+
+		& li {
+			padding: 0 0.5rem;
+		}
+	}
+}
+
+@media (max-width: 576px) { 
+	.logo { margin:0; padding:0}
+	nav { margin:0; padding:0}
+
+	nav ul {
+		display: none;
+	}
+
+	nav::before, nav::after {
+		content: "";
+		display: block;
+		margin-bottom: 0.50rem;
+		margin-right: 1rem;
+		height: 0.5rem;
+		width:3rem;
+		background: var(--primary-orange);
+		border-radius: 0.25rem;
+	}
+}

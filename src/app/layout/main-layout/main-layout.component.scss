@@ -26,3 +26,23 @@ main  {
 	background: var(--primary-dark);
 	border-right: 1px solid var(--secondary-dark)
 }
+
+@media (max-width: 992px) { 
+	main {
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+	}
+
+	#sidebar {
+		height: 3.5rem;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 576px) { 
+	#sidebar {
+		padding: 1rem 0.25rem;
+	}
+}
