@@ -3,9 +3,18 @@
 	background: linear-gradient(var(--primary-dark), rgb(0 0 0 / 65%)), url(/assets/images/building1.jpeg) no-repeat;
 	background-size: 100%;
 	background-position: 50% 70%;
+	background-size: cover;
+
 
 	display: flex;
 	justify-content: center;
+	border: 4px solid pink;
+}
+
+@media (max-width: 992px) { 
+	#login-container {
+		margin: 0 0.5rem;
+	}
 }
 
 #login-container {
@@ -14,6 +23,7 @@
 	height: 24rem;
 	width: 35rem;
 	padding: 2rem 4rem;
+	margin: 0 1rem;
 	z-index: 0;
 	
 	display: flex;
@@ -95,3 +105,4 @@
 
 	}
 }
+
