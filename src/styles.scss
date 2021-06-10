@@ -77,9 +77,11 @@ h1.container-title {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	overflow: hidden;
 
 	.chart-container {
-		margin: 1rem;
+		margin-top: 1rem;
+		padding-left: 1rem;
 		// width: 30%;
 	}
 
