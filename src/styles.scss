@@ -76,10 +76,11 @@ h1.container-title {
 .charts {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 
 	.chart-container {
 		margin: 1rem;
-		width: 30%;
+		// width: 30%;
 	}
 
 	app-timeline {}
